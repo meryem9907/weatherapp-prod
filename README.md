@@ -26,7 +26,7 @@ This repository folder currently holds a **compiled release** (HTML, CSS, JavaSc
 | HTTP | **gloo-net** (async fetch from WASM) |
 | Styling | **Bulma** + custom CSS (glass panels, gradients) |
 | Data | **OpenWeatherMap** REST API (current weather + forecast endpoints, metric units) |
-| Optional extra | Hooks for a **local “room temperature”** endpoint (custom integration) |
+| Optional extra | Hooks for a **local “room temperature”** endpoint (custom integration) via a microcontroller e.g. BME280 Sensor Module -> Mini D1 ESP32. |
 
 ---
 
@@ -35,8 +35,8 @@ This repository folder currently holds a **compiled release** (HTML, CSS, JavaSc
 - **Current weather** view with main conditions, wind, visibility-style details, and iconography.
 - **Forecast** surfaces: multi-day and **3-hour** style breakdowns (aligned with common forecast API shapes).
 - **City search** to query locations by name.
-- **Playful condition copy** (humorous English strings tied to weather codes—shows attention to UX tone, not only data tables).
-- **Subresource integrity** on scripts and styles in `index.html`—shows awareness of supply-chain / tampering risks on static assets.
+- **Playful condition copy**.
+- **Subresource integrity** on scripts and styles in `index.html`-
 
 ---
 
@@ -52,10 +52,6 @@ python -m http.server 8080
 ```
 
 Then open `http://localhost:8080`. The app will call **OpenWeatherMap** from the browser.
-
-Example with https://static.app/:
-
-Export project as a zip file and upload it.
 
 ---
 
