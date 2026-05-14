@@ -30,7 +30,7 @@ This repository folder currently holds a **compiled release** (HTML, CSS, JavaSc
 
 ---
 
-## Product / feature highlights
+## Product 
 
 - **Current weather** view with main conditions, wind, visibility-style details, and iconography.
 - **Forecast** surfaces: multi-day and **3-hour** style breakdowns (aligned with common forecast API shapes).
